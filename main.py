@@ -36,9 +36,9 @@ def slow_print(str):
 
 
 def bad_end():
-    image = Image.open("assets/pictures/escape.png")
+    image = Image.open("assets/pictures/bad_end.png")
     image.show()
-    playsound('assets/sounds/sample2.mp3')
+    playsound('assets/sounds/bad_end.mp3')
 
 
 def game_start():
@@ -326,6 +326,7 @@ def true_end():
     input("I can show this off to people even the way it is now!")
     input("I'll try to polish it a bit here and there. But for now I think it's safe to say it's completed.")
     input("Completed.")
+    playsound('assets/sounds/good_end.mp3')
     slow_print("Complete")
     time.sleep(1.5)
     slow_print("I really finished it")
@@ -333,5 +334,9 @@ def true_end():
     slow_print("Thank you " + name)
     time.sleep(4)
     print("I feel like this is the start of something great")
+    time.sleep(2)
+    image = Image.open("assets/pictures/good_end.png")
+    image.show()
+
 
 ask_name()
