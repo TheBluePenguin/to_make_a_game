@@ -1,10 +1,10 @@
 # Created by Zachary Criswell
 from PIL import Image
 import time
-import pyglet
 import sys
 import random
 from playsound import playsound
+
 
 def ask_name():
     global name
@@ -29,7 +29,7 @@ def ask_name():
 
 def slow_print(str):
     for letter in str:
-        if(letter != ' '):
+        if letter != ' ':
             sys.stdout.write(letter)
             time.sleep(.20)
         else:
@@ -80,12 +80,32 @@ def game_start():
 
 
 def music_end():
-    input("make music huh?")
+    input("I'm really happy you choose music.")
+    input("I think music can really express what I feel in my soul.")
+    input("I just need 200$ to afford the music production software.")
+    input("Right now I'm not making any money so I wont be able to afford it.")
+    input("But I can learn how to use it with some free Youtube tutorials!")
+    input("I really don't want to use a free one, as I'd rather not be held back by any restrictions in the software.")
+    input("I have a very particular idea for how I want my music to sound -")
+    input("and only the nice software allows editing in the way I need.")
+    input("...")
+    input("I feel as if you are looking down on me")
+    input("That you think that I'm setting my standards too high.")
+    input("...")
+    input("It needs to be perfect!")
+    input("I'm not going to use just any free crappy music production software! I need quality!")
+    input("You said make some music, and if I'm going to make music, I'm going to do it MY way!")
+    input("I don't need you " + name + ".")
+    input("I bet you couldn't even appreciate the unique sounds I would create.")
+    input("You're not helping me.")
+    slow_print("Go away " + name)
     bad_end()
+
 
 def draw_end():
     input("draw huh?")
     bad_end()
+
 
 def game_continue():
     input("Okay " + name + " I think you are right.")
@@ -101,7 +121,7 @@ def game_continue():
     input("I’ll have a big soundtrack that is full of classic instruments inspired by the medieval period.")
     input("By doing this I can draw, make music, and all the while make a video game!")
     answer = input("It's perfect; I can do all 3 at once! Isn't this a great idea?! ")
-    while answer.lower() != 'valid response':
+    while answer != 'valid response':
         if answer.lower() == "yes":
             bad_end()
         elif answer.lower() == "no":
@@ -110,12 +130,13 @@ def game_continue():
         else:
             answer = input("Its a yes or no question. Is this idea good? ")
 
+
 def true_end():
     input("What do you mean? If I make a game I gotta go all out right?")
     input("...")
     input("Well I guess there are text based adventure games, and some simple visual novels")
     answer = input("Is that what you are suggesting? I make a text based adventure game? ")
-    while answer.lower() != "valid response":
+    while answer != "valid response":
         if answer.lower() == "yes":
             answer = "valid response"
             input("Alright fine.")
@@ -136,7 +157,7 @@ def true_end():
     input("And I could add a secret ending! Like where it's actually just a kid playing with a bunch of toys")
     input("Or maybe a true ending? Like where the knight leaves the two kingdoms alone to do a different adventure.")
     answer2 = input("Does all that sound good for me to make? ")
-    while answer2.lower() != "valid response":
+    while answer2 != "valid response":
         if answer2.lower() == "yes":
             bad_end()
         elif answer2.lower() == "no":
@@ -155,7 +176,7 @@ def true_end():
     input("Then with their guidance they are able to select a project to work on, and make it simple enough to do.")
     input("And then they can FINALLY finish something.")
     answer3 = input("Does that sound like a feasible game " + name)
-    while answer3.lower() != "valid response":
+    while answer3 != "valid response":
         if answer3.lower() == "no":
             answer3 = "valid response"
             input("Well fuck you then!")
@@ -185,7 +206,7 @@ def true_end():
     input("I'll try to watch some videos on how to write a compelling narrative.")
     input("Oh! And maybe get some energy drinks to help me focus for longer next time")
     answer4 = input("What do you think? Should I take a break, or keep working? ")
-    while answer4.lower() != "valid response":
+    while answer4 != "valid response":
         if answer4.lower() == "keep working":
             answer4 = "valid response"
             pass
