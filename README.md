@@ -1,4 +1,3 @@
-Read_me
 This is something of a cross between a visual novel and a text based adventure. However visuals + sound are only heard at the endings.
 For best enjoyment please only type a response when asked a direct question. No other time will a response work.
 
