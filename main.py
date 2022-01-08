@@ -159,6 +159,15 @@ def true_end():
     answer2 = input("Does all that sound good for me to make? ")
     while answer2 != "valid response":
         if answer2.lower() == "yes":
+            input("Awe heck yeah!")
+            input("I knew you'd like it!")
+            input("This game is going to be so awesome.")
+            input("Im not really sure where to start")
+            input("This game is going to have so much depth, most people wont even scrape the bottom!")
+            input("I remember getting some videos recommended to me about world building. Ill have to watch those")
+            input("I should also research The Hero's Journey")
+            input("Maybe I should read some fantasy books, and play some medieval RPG games for inspiration")
+            input("Ahhhh... but what to play? So many to choose from. Ill have to make a list")
             bad_end()
         elif answer2.lower() == "no":
             answer2 = 'valid response'
