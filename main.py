@@ -2,7 +2,6 @@
 from PIL import Image
 import time
 import sys
-import random
 from playsound import playsound
 
 
@@ -59,6 +58,7 @@ def game_start():
     input("I'm sure I can just transfer the skills over from what I watched.")
     slow_print("Im sorry " + name)
     time.sleep(2)
+    print("\n")
     input("I'm starting to get off track here.")
     input("The point is. I have a lot of ideas and I need to really narrow down what I should be working on.")
     input("My last idea is I really want to make a game.")
@@ -89,7 +89,7 @@ def music_end():
     input("I have a very particular idea for how I want my music to sound -")
     input("and only the nice software allows editing in the way I need.")
     input("...")
-    input("I feel as if you are looking down on me")
+    input("I feel as if you are looking down on me.")
     input("That you think that I'm setting my standards too high.")
     input("...")
     input("It needs to be perfect!")
@@ -103,14 +103,79 @@ def music_end():
 
 
 def draw_end():
-    input("draw huh?")
+    questions = []
+    input("Alright " + name + " lets do some drawing!")
+    input("I don't want to draw Weeple just yet, I want to improve my drawing skills a bit more before drawing him.")
+    input("Instead I'll just draw some generic sword fighter. I just need to get some paper real quick...")
+    slow_print("...")
+    time.sleep(2)
+    print(" ")
+    slow_print("......")
+    time.sleep(2)
+    print(" ")
+    slow_print("...............")
+    time.sleep(2)
+    print(" ")
+    slow_print("......................")
+    time.sleep(2)
+    print(" ")
+    input("Okay so I got some paper and a pencil but It's not drawing paper.")
+    input("It's just some regular printer paper.")
+    input("I also couldn't find my good pencil either but it's okay because this is just a practice drawing.")
+    input("Okay, I know I said generic sword fighter but now I don't know what kind of sword we are talking about.")
+    answer = input("Should I do a giant steel sword, a samurai sword, or a classic knight sword? ")
+    while answer != "valid response":
+        if answer.lower() == "samurai sword" or answer.lower() == "samurai":
+            answer = 'valid response'
+            input("Alright a samurai sword sounds good.")
+        elif answer.lower() == "giant" or answer.lower() == "giant steel" or answer.lower() == "giant steel sword":
+            answer = 'valid response'
+            input("Alright a giant sword sounds good.")
+        elif answer.lower() == "make a game" or answer.lower() == "create a game" or answer.lower() == "game":
+            answer = 'valid response'
+            input("Alright a classic sword sounds good.")
+        else:
+            answer = input("I don't understand. Draw a giant steel sword, a samurai sword, or a classic knight sword? ")
+    input("Now lets think about armor")
+    answer2 = input("Should I draw bulky armor, slim futuristic armor, or classic armor? ")
+    while answer2 != "valid response":
+        if answer2.lower() == "bulky" or answer2.lower() == "bulky armor":
+            answer2 = 'valid response'
+            input("Alright a bulky armor it is.")
+        elif answer2.lower() == "slim armor" or answer2.lower() == "slim futuristic armor":
+            answer2 = 'valid response'
+            input("Alright slim futuristic armor it is.")
+        elif answer2.lower() == "classic armor" or answer2.lower() == "classic":
+            answer2 = 'valid response'
+            input("Alright a classic armor it is.")
+        else:
+            answer2 = input("I don't understand. Draw a bulky armor, slim futuristic armor, or classic armor? ")
+    input("Now lets talk about their size!")
+    answer3 = input("Should I draw them as a big build, normal build, or a slender build? ")
+    while answer3 != "valid response":
+        if answer3.lower() == "big build" or answer3.lower() == "big":
+            answer3 = 'valid response'
+            input("One big man coming up.")
+        elif answer3.lower() == "normal build" or answer3.lower() == "normal":
+            answer3 = 'valid response'
+            input("One normal sized man coming up")
+        elif answer3.lower() == "slender build" or answer3.lower() == "slender":
+            answer3 = 'valid response'
+            input("One slender man coming up... And no not THAT kind of slender man.")
+        else:
+            answer3 = input("I don't understand. Draw them as a big build, normal build, or a slender build? ")
+    input("Okay Im pooped. I think this is a great place to stop for today.")
+    input("We spent a good while coming up with ideas for practice drawings.")
+    input("But Im feeling pretty mentally tired now.")
+    input("I think I'll start putting pencil to paper tomorrow.")
+    slow_print("Ill see you again after I finish some practice drawings " + name)
     bad_end()
 
 
 def game_continue():
     input("Okay " + name + " I think you are right.")
     input("I have a good understanding of programming, and I don't need to buy a game maker studio to make a game.")
-    input("The hardest part for me right now, is figuring out what I want to make")
+    input("The hardest part for me right now, is figuring out what I want to make.")
     input("Here is one I just came up with on the fly!")
     input("A 3D adventure game, reenacting an epic tale of a knight who saves two warring kingdoms.")
     input("You'll get to choose which kingdom to fight for, and a bunch of different endings are possible.")
@@ -123,6 +188,16 @@ def game_continue():
     answer = input("It's perfect; I can do all 3 at once! Isn't this a great idea?! ")
     while answer != 'valid response':
         if answer.lower() == "yes":
+            input("This game is going to be awesome!")
+            input("I got a lot to learn before I really start though")
+            input("Its a bit overwhelming to be honest")
+            input("But you said to do it, so Ill shoot for the stars!")
+            input("Im going to watch some videos on how to make 3D assets.")
+            input("Actually I should learn which program to use to make 3D assets before doing that.")
+            input("The music is also going to be really important.")
+            input("Maybe I should work on that first?")
+            input("I guess the story needs to be created too. That is the first thing I should really work on.")
+            input("I'll figure it out eventually. I just need to think on it for a while")
             bad_end()
         elif answer.lower() == "no":
             answer = 'valid response'
@@ -132,9 +207,9 @@ def game_continue():
 
 
 def true_end():
-    input("What do you mean? If I make a game I gotta go all out right?")
+    input("What do you mean? If I make a game I gotta go all out.")
     input("...")
-    input("Well I guess there are text based adventure games, and some simple visual novels")
+    input("Well I guess there are text based adventure games, and some simple visual novels.")
     answer = input("Is that what you are suggesting? I make a text based adventure game? ")
     while answer != "valid response":
         if answer.lower() == "yes":
@@ -143,18 +218,18 @@ def true_end():
             input("Ill do that.")
         elif answer.lower() == "no":
             answer = 'valid response'
-            input("Well I really don't know what else to make that is simple but also interests me")
-            input("To be honest its not that bad of an idea. Making a text based adventure game")
+            input("Well I really don't know what else to make that is simple but also interests me.")
+            input("To be honest its not that bad of an idea. Making a text based adventure game.")
             input("I think I'll do it anyway.")
         else:
             answer = input("Its a yes or no question. Should I make a text based adventure game? ")
     input("But I am totally going to tell an awesome story.")
     input("I still like the epic tale of two kingdoms at war, and you, a humble knight, must stop the war.")
     input("It'll have a bunch of locations, NPCs, and puzzles. I'd probably have four different endings.")
-    input("One ending for each respective kingdom winning, and one ending for mutual destruction")
+    input("One ending for each respective kingdom winning, and one ending for mutual destruction.")
     input("Oh and of course the good ending where you make peace between the two.")
     input("But I guess that doesn't account for all the player deaths, those should be unique endings too.")
-    input("And I could add a secret ending! Like where it's actually just a kid playing with a bunch of toys")
+    input("And I could add a secret ending! Like where it's actually just a kid playing with a bunch of toys.")
     input("Or maybe a true ending? Like where the knight leaves the two kingdoms alone to do a different adventure.")
     answer2 = input("Does all that sound good for me to make? ")
     while answer2 != "valid response":
@@ -162,12 +237,12 @@ def true_end():
             input("Awe heck yeah!")
             input("I knew you'd like it!")
             input("This game is going to be so awesome.")
-            input("Im not really sure where to start")
+            input("Im not really sure where to start.")
             input("This game is going to have so much depth, most people wont even scrape the bottom!")
-            input("I remember getting some videos recommended to me about world building. Ill have to watch those")
-            input("I should also research The Hero's Journey")
-            input("Maybe I should read some fantasy books, and play some medieval RPG games for inspiration")
-            input("Ahhhh... but what to play? So many to choose from. Ill have to make a list")
+            input("I remember getting some videos recommended to me about world building. Ill have to watch those.")
+            input("I should also research The Hero's Journey.")
+            input("Maybe I should read some fantasy books, and play some medieval RPG games for inspiration.")
+            input("Ahhhh... but what to play? So many to choose from. Ill have to make a list.")
             bad_end()
         elif answer2.lower() == "no":
             answer2 = 'valid response'
@@ -184,7 +259,7 @@ def true_end():
     input("And after doing this for years they finally get help from someone else, or a personified alter ego.")
     input("Then with their guidance they are able to select a project to work on, and make it simple enough to do.")
     input("And then they can FINALLY finish something.")
-    answer3 = input("Does that sound like a feasible game " + name)
+    answer3 = input("Does that sound like a feasible game " + name + "? ")
     while answer3 != "valid response":
         if answer3.lower() == "no":
             answer3 = "valid response"
@@ -206,6 +281,7 @@ def true_end():
     for i in range(120, 0, -1):
         print('\r', str(i), end="")
         time.sleep(.1)
+        print("\n")
     input("Thank you for waiting " + name)
     input("I got the whole project foundation set up.")
     input("All that's really left is adding a script for the story, and then just plugging it in to the code.")
@@ -233,12 +309,16 @@ def true_end():
     input("I can type up the script really fast. Just give me a moment.")
     slow_print("...")
     time.sleep(2)
+    print("\n")
     slow_print("......")
     time.sleep(2)
+    print("\n")
     slow_print("...............")
     time.sleep(2)
+    print("\n")
     slow_print("......................")
     time.sleep(2)
+    print("\n")
     input("I did it " + name + "!!")
     input("I got it all finished and plugged into my code!")
     input("I can tell it's a bit rough but at least it's working.")
